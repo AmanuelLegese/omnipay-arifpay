@@ -1,0 +1,4 @@
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{"error":false,"msg":"No Errors","data":{"id":119199,"uuid":"0FCD55F3D3A3","nonce":"order-1234","totalAmount":10.0,"phone":"251900000000","email":"sandbox@example.com","currency":null,"transaction":{"id":115911,"transactionId":null,"transactionStatus":"PENDING","paymentType":null,"amount":0.0,"fee":0.0,"type":"CREDIT","feeSource":"CUSTOMER"}}}

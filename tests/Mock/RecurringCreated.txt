@@ -1,0 +1,4 @@
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{"amount":10.0,"frequency":"MONTHLY","startDate":"2027-12-31T23:59:00","status":"ACTIVE","customerId":4645,"recurringPaymentName":"probe","uuid":"4a1cc60e-78bb-43a5-b1ff-be39e669eec4","subscriberCount":0}

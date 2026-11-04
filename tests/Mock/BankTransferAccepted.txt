@@ -1,0 +1,4 @@
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{"error":false,"msg":"Transfer successful","data":{"nonce":"order-1234","amount":"5.0","accountNumber":"1000123456789"}}

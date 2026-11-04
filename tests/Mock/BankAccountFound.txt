@@ -1,0 +1,4 @@
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{"error":false,"msg":"Account Query Successfull","data":{"value":{"requestRefID":"0f3f761e","responseCode":"0","responseDescription":"Account found","ResponseParameters":[],"bankAccountInfo":{"shortCode":"CBE","accountNumber":"1000123456789","title":"Mr","fullNames":"Sandbox Account Holder","firstName":"Sandbox","lastName":"User","status":"ACTIVE"}},"statusCode":200,"contentType":"application/json"}}

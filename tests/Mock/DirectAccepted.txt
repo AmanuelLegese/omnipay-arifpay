@@ -1,0 +1,4 @@
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{"error":false,"msg":"USSD request sent to your phone","data":{"sessionId":"ED54BDB4D5BF2D","transaction":{"transactionStatus":"PENDING"},"otp":null,"url":null,"page":null}}

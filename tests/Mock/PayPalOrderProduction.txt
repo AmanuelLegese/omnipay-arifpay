@@ -1,0 +1,4 @@
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{"error":false,"msg":"Paypal order created successfully","data":{"orderId":"5O190127TN364715T","approvalUrl":"https://www.paypal.com/checkoutnow?token=5O190127TN364715T","SessionId":"ED54BDB4D5BF2D"}}

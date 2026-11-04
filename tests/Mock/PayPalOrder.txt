@@ -1,0 +1,4 @@
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{"error":false,"msg":"Paypal order created successfully","data":{"orderId":"SANDBOX-512C103AB4614EF39","approvalUrl":"https://www.sandbox.paypal.com/checkoutnow?token=SANDBOX-512C103AB4614EF39","sessionId":"3F8D3DAAD66D"}}

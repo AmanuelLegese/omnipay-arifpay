@@ -1,0 +1,4 @@
+HTTP/1.1 500 Internal Server Error
+Content-Type: application/json
+
+{"timestamp":"2026-11-04T07:36:34.896+00:00","status":500,"error":"Internal Server Error","message":"Item total price, which is 50000.0, cannot be greater than 43200","path":"/api/sandbox/c2b/session"}

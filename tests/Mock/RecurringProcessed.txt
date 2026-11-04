@@ -1,0 +1,4 @@
+HTTP/1.1 200 OK
+Content-Type: text/plain
+
+Processed 2 pending subscribers: 0 successfully updated, 0 failed, 0 cancelled.

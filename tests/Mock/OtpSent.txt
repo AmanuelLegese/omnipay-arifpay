@@ -1,0 +1,4 @@
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{"error":false,"msg":"OTP SENT","data":{"transaction":{"id":115926,"checkoutSession":{"id":119199,"uuid":"0FCD55F3D3A3","nonce":"order-1234","totalAmount":10.0,"phone":"251900000000","email":"sandbox@example.com","currency":null},"transactionId":null,"transactionStatus":"PENDING","paymentType":"BINGET","amount":0.0,"fee":0.0},"sessionId":"0FCD55F3D3A3","otp":null,"url":"https://example.com/s","page":null}}

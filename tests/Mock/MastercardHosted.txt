@@ -1,0 +1,4 @@
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{"error":false,"msg":"Success","data":{"transaction":{"id":115923,"checkoutSession":{"id":119199,"uuid":"0FCD55F3D3A3","nonce":"order-1234","totalAmount":10.0,"phone":"251900000000","email":"sandbox@example.com","currency":null},"transactionId":null,"transactionStatus":"PENDING","paymentType":"DASHEN_MASTER_CARD"},"sessionId":"SESSION0002123456789","otp":null,"url":null,"page":null}}

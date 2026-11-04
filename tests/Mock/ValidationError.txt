@@ -1,0 +1,4 @@
+HTTP/1.1 400 Bad Request
+Content-Type: application/problem+json
+
+{"error":true,"msg":"Validation Error","data":{"errorUrl":"error url is mandatory","items":"items can't be empty"}}
