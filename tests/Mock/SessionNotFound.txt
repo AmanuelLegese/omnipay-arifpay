@@ -1,0 +1,4 @@
+HTTP/1.1 404 Not Found
+Content-Type: application/json
+
+{"error":true,"msg":"session not found with the given id","data":null}

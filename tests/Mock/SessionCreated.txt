@@ -1,0 +1,4 @@
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{"error":false,"msg":"Sandbox session created","data":{"sessionId":"4ECE0AB9D8BD","paymentUrl":"https://checkout.arifpay.org/checkout/4ECE0AB9D8BD","cancelUrl":"https://gateway.arifpay.net/v0/sandbox/checkout/session/cancel/4ECE0AB9D8BD","totalAmount":10.0}}

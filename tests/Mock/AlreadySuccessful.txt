@@ -1,0 +1,4 @@
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{"error":true,"msg":"The Checkout is Already Successful","data":{"transaction":{"id":115912,"checkoutSession":{"id":119199,"uuid":"0FCD55F3D3A3","nonce":"order-1234","totalAmount":10.0,"phone":"251900000000","email":"sandbox@example.com","currency":null},"transactionId":"SIM-1a31251a","transactionStatus":"SUCCESS","paymentType":"TELEBIRR_USSD","amount":10.0,"fee":0.288},"sessionId":"0FCD55F3D3A3"}}

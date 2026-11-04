@@ -1,0 +1,4 @@
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{"error":false,"msg":"Status Check Successful","data":{"value":{"success":true,"conversationID":"SIM-ae994cec","responseCode":"0","responseDescription":"Completed","errorCode":null,"errorMessage":null},"statusCode":200}}

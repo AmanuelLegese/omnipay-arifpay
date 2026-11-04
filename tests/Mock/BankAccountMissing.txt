@@ -1,0 +1,4 @@
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{"error":false,"msg":"Account Query Successfull","data":{"value":{"responseCode":"1","responseDescription":"Account not found","ResponseParameters":[]},"statusCode":200}}

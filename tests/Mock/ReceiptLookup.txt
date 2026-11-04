@@ -1,0 +1,4 @@
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{"error":false,"msg":"No Errors","data":{"SessionId":"ED54BDB4D5BF2D","nonce":"order-1234","totalAmount":100.0,"transactionStatus":"SUCCESS","paymentType":"TELEBIRR_USSD"}}

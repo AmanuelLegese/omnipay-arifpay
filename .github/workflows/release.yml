@@ -1,0 +1,57 @@
+name: Release
+
+# Push a vX.Y.Z tag on master to publish a GitHub Release. The notes are that
+# version's section of CHANGELOG.md, so write it before tagging.
+
+on:
+  push:
+    tags:
+    - 'v*.*.*'
+
+jobs:
+  tests:
+    uses: ./.github/workflows/run-tests.yml
+
+  release:
+    needs: tests
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - name: Check the tag is on master
+      run: |
+        if ! git merge-base --is-ancestor "$GITHUB_SHA" origin/master; then
+          echo "::error::$GITHUB_REF_NAME is not on master"
+          exit 1
+        fi
+
+    - name: Extract release notes from CHANGELOG.md
+      run: |
+        version="${GITHUB_REF_NAME#v}"
+        # From this version's heading up to the next heading or the link list.
+        awk -v heading="## [$version]" '
+          /^## \[/ || /^\[[^]]+\]: / { if (found) exit }
+          index($0, heading) == 1 { found = 1; next }
+          found
+        ' CHANGELOG.md > notes.md
+        if ! grep -q '[^[:space:]]' notes.md; then
+          echo "::error::CHANGELOG.md has no section for $version"
+          exit 1
+        fi
+
+    - name: Create GitHub release
+      env:
+        GH_TOKEN: ${{ github.token }}
+      run: |
+        flags=()
+        if [[ "$GITHUB_REF_NAME" == *-* ]]; then
+          flags+=(--prerelease)
+        fi
+        gh release create "$GITHUB_REF_NAME" --verify-tag --title "$GITHUB_REF_NAME" \
+          --notes-file notes.md "${flags[@]}"

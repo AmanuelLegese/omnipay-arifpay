@@ -1,0 +1,4 @@
+HTTP/1.1 400 Bad Request
+Content-Type: application/json
+
+{"message":"Subscriber is not in CANCELLED status and cannot be reinitiated","status":"error"}
