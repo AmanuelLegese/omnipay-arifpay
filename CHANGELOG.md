@@ -7,7 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-First version, not yet tagged. Requires PHP 8.2+ and `omnipay/common` ^3.5.
+## [0.1.0] - 2026-11-04
+
+First release. Requires PHP 8.2+ and `omnipay/common` ^3.5.
 
 Checked against ArifPay's sandbox. Nothing has been exercised with a production key.
 
@@ -31,4 +33,5 @@ Checked against ArifPay's sandbox. Nothing has been exercised with a production 
 - `completePurchase()` takes the same parameters as `purchase()`, and a paid session for a
   different `amount` is not successful (`isAmountMismatch()`).
 
-[Unreleased]: https://github.com/AmanuelLegese/omnipay-arifpay/commits/master
+[Unreleased]: https://github.com/AmanuelLegese/omnipay-arifpay/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/AmanuelLegese/omnipay-arifpay/releases/tag/v0.1.0
